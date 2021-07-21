@@ -28,6 +28,47 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
     <!-- =======================================================
   * Template Name: Arsha - v2.3.1
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -54,6 +95,7 @@
                     <li><a href="#section_4">建築外觀I</a></li>
                     <li><a href="#section_5">建築外觀II</a></li>
                     <li><a href="#section_6">建築理念</a></li>
+                    <li><a href="#section_7">實景相片</a></li>
                     <li><a href="#contact">聯絡我們</a></li>
 
                 </ul>
@@ -88,7 +130,7 @@
             </div>
 
              -->
-        </div>
+    </div>
 
     </section> -->
     <!-- End Hero -->
@@ -189,6 +231,48 @@
 
                 <img src="assets/img/6.jpg" class="img-responsive" alt="">
 
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- ======= Section ======= -->
+        <section id="section_7" class="session">
+            <div class="section-container" data-aos="fade-up">
+
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/05-1.jpg"></div>
+                        <div class="swiper-slide"><img src="assets/img/05-2.jpg"></div>
+                        <div class="swiper-slide"><img src="assets/img/05-3.jpg"></div>
+                        <div class="swiper-slide"><img src="assets/img/05-4.jpg"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 00,
+                        loop: true,
+                        autoplay: {
+                            delay: 3000
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev"
+                        }
+                    });
+                </script>
             </div>
         </section>
         <!-- End Section -->
