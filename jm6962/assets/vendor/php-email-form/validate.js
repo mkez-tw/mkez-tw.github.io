@@ -138,7 +138,7 @@
 
         $.ajax({
             type: 'POST',
-            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdOhgFJG3-J0ECu9TXBi6XIIkmDCSsySqL2o6Y42hL9IdJbbA/formResponse',
+            url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bSyoPAV0eK3DlGIt0tWtSu-8ZqQ5Wd4mbWSTvj1uqDBKrQ/formResponse',
             contentType: 'application/json',
             dataType: 'jsonp',
             async: false,
